@@ -1,6 +1,7 @@
 # bulk query gandi net domains
 
 ## prerequisities:
+node >= 16
 ```
 npm install
 ```

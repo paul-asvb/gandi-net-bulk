@@ -1,10 +1,12 @@
 {
   "name": "gandi-net-bulk",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "update-tlds":"node update_tlds.js",
+    "update-tlds": "node update_tlds.js",
+    "query": "node query_domain.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/paul-asvb/gandi-net-bulk#readme",
   "dependencies": {
+    "async-sema": "^3.1.0",
     "dotenv": "^10.0.0",
     "node-fetch": "^2.6.1"
   }
