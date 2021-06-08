@@ -42,9 +42,9 @@ for (const i of tdls) {
 }
 
 fs.writeFile("./prices.json", JSON.stringify(allResults), function (err, data) {
-    if (err) {
-      return console.log(err);
-    } else {
-      console.log(`${tdl_file} updated.`);
-    }
-  });
+  if (err) {
+    return console.log(err);
+  } else {
+    console.log(`${tdl_file} updated.`);
+  }
+});
